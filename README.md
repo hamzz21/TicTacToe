@@ -1,2 +1,2 @@
 # TicTacToe
-This is a simple Tic- Tac Toe game using python in Visual Studio Code.
+This is a simple Tic Tac Toe game using Python in Visual Studio Code.
