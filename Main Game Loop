@@ -1,4 +1,7 @@
 def play_game():
+
+    print("Welcome to Tic-Tac-Toe!")
+    
     current_player = "X"
     while " " in board:
         print_board()
