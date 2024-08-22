@@ -20,7 +20,8 @@ def play_game():
         except (ValueError, IndexError):
             print("Invalid input. Please enter a number between 1 and 9.")
     print_board()
-    print("It's a tie!")
+
+    print("It's a tie! Better luck next time.")
 
 if __name__ == "__main__":
     play_game()
