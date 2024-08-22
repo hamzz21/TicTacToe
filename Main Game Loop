@@ -1,12 +1,13 @@
 def play_game():
 
     print("Welcome to Tic-Tac-Toe!")
+    print("To make a move, enter a number from 1 to 9 corresponding to the board position.")
     
     current_player = "X"
     while " " in board:
         print_board()
         try:
-            move = int(input(f"Player {current_player}, enter your move (1-9): ")) - 1
+            move = int(input(f"Player {current_player}, enter your move (choose a position from 1 to 9): ")) - 1
             if board[move] == " ":
                 board[move] = current_player
                 if check_win(current_player):
@@ -19,7 +20,8 @@ def play_game():
         except (ValueError, IndexError):
             print("Invalid input. Please enter a number between 1 and 9.")
     print_board()
-    print("It's a tie!")
+
+    print("It's a tie! Better luck next time.")
 
 if __name__ == "__main__":
     play_game()
